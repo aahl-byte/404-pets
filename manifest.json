@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "404 Pets",
+  "version": "1.0.0",
+  "description": "A cute pixel cat that lives in your browser — it walks around, chases your cursor, naps, plays with yarn, and climbs on page elements.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "404 Pets",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/pet.js"],
+      "css": ["content/pet.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

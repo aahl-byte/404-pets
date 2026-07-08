@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 Pets — demo page</title>
+  <link rel="stylesheet" href="../content/pet.css">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 120px;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 { color: #d9822b; }
+    .box {
+      background: #f5e9d8;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+    img.placeholder {
+      display: block;
+      width: 320px;
+      height: 140px;
+      background: linear-gradient(135deg, #f5a54a, #f08ca4);
+      border-radius: 10px;
+      margin: 24px 0;
+    }
+    button {
+      background: #f5a54a; color: #fff; border: none;
+      padding: 10px 18px; border-radius: 8px; font-size: 15px; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>404 Pets — demo page</h1>
+  <p>This page previews the pet without installing the extension. A little cat
+  should appear at the bottom of the window. Things to try:</p>
+
+  <div class="box">
+    <ul>
+      <li><strong>Wait</strong> — it walks, sits, naps, and explores on its own.</li>
+      <li><strong>Wave the cursor</strong> quickly near it — it may give chase and pounce.</li>
+      <li><strong>Click it</strong> — hearts!</li>
+      <li><strong>Drag and toss it</strong> — it goes flying and lands on its feet.</li>
+      <li><strong>Watch it climb</strong> — it jumps onto headings, images, and buttons
+        on the page, and paws at them.</li>
+    </ul>
+  </div>
+
+  <h2>A heading it can sit on</h2>
+  <p>Cats sit on anything. Keyboards, laundry, this paragraph's heading.</p>
+
+  <img class="placeholder" alt="a colorful placeholder the cat can climb on" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+
+  <h2>Another perch over here</h2>
+  <p>Scroll around — if the cat is standing on something when it scrolls away,
+  it rides along and hops off at the edge of the window.</p>
+
+  <p><button id="demo-btn">A very sittable button</button></p>
+
+  <p>In the real extension, the toolbar popup lets you toggle the pet, change
+  its coat color, and toss it a ball of yarn.</p>
+
+  <script src="../content/pet.js"></script>
+</body>
+</html>

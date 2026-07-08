@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon48.png" alt="" width="28" height="28">
+    <h1>404 Pets</h1>
+  </header>
+
+  <label class="row toggle-row">
+    <span>Pet enabled</span>
+    <span class="switch">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </span>
+  </label>
+
+  <div class="row">
+    <span>Coat</span>
+    <div class="swatches" id="swatches">
+      <button class="swatch" data-color="orange" title="Orange tabby" style="--c:#F5A54A"></button>
+      <button class="swatch" data-color="gray" title="Gray" style="--c:#9AA3AD"></button>
+      <button class="swatch" data-color="black" title="Black" style="--c:#41414D"></button>
+    </div>
+  </div>
+
+  <button id="yarn" class="yarn-btn">🧶 Toss a ball of yarn</button>
+  <p id="status" class="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
