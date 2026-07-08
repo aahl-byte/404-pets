@@ -55,4 +55,16 @@ content/pet.css      overlay, particles, wiggle animation
 popup/               toolbar popup (toggle, coat color, yarn button)
 icons/               generated pixel-cat icons (16/48/128)
 demo/index.html      standalone preview page
+scripts/gen_icons.py icon generator (stdlib-only PNG writer)
+Makefile             dev tasks
+```
+
+## Dev tasks
+
+```
+make check   # syntax-check the JS
+make icons   # regenerate icons/ from scripts/gen_icons.py
+make zip     # build dist/404-pets-<version>.zip for distribution
+make serve   # serve the repo and print the demo page URL (PORT=8404)
+make clean   # remove dist/
 ```
